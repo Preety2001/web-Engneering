@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ceb4b4;
+}
+
+header {
+    background-color: #af5757;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shoes {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shoes img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.shoes h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgb(196, 130, 44);
+}
+
+.shoes p {
+    color: #1f1e1e;
+}
