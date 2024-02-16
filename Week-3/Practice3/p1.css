@@ -1,0 +1,107 @@
+
+button {
+    border: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.hover-button {
+    background-color: #052c46;
+    color: #fff;
+}
+
+.hover-button:hover {
+    background-color: #2980b9;
+}
+
+.index1{
+    color: lightcoral;
+}
+.index1:visited{
+   background-color: aqua;
+}
+
+/* Styles for the first child of the container */
+.container p:first-child {
+    font-weight: bold;
+    color: #3498db; /* Blue color */
+}
+.container:first-child{
+    background-color: aqua;
+}
+
+.parent{
+        position:relative;
+        width: 40px; 
+        padding: 40px;
+        height: 40px; 
+        background-color: #3498db; 
+
+}
+.child{
+        position:absolute;
+        width: 40px; 
+        height: 40px; 
+        padding: 40px;
+        background-color: rgb(10, 192, 131); 
+
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Sixtyfour', sans-serif;
+
+}
+.myIcon{
+width: 50px;
+height: 100px;
+
+}
+
+.hide{
+    overflow: hidden;
+    height: 400px;
+    width: 200px;
+    overflow: scroll;
+}
+
+.c1{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 100bh;
+    flex-direction: column;
+}
+.circle1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: inline;
+}
+
+.circle2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: palevioletred;
+    display: inline;
+}
+
+.circle3{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(71, 202, 20);
+    display: inline;
+}
+.circle13{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(202, 20, 20);
+    display: inline;
+
+}
