@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Event Invitations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .invitation {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .invitation p {
+      margin: 10px 0;
+    }
+
+    /* Additional CSS to make it unique */
+    .invitation::before {
+      content: "\1F389"; /* Party popper emoji */
+      font-size: 24px;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .invitation .highlight {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Special Event Invitations</h1>
+    <div id="invitationList"></div>
+  </div>
+
+  <script>
+    function generateInvitations(guests, ...additionalDetails) {
+      const invitationList = document.getElementById('invitationList');
+
+      guests.forEach(guest => {
+        let invitationMessage = `Hello ${guest.name},\n`;
+        invitationMessage += `You are cordially invited to a special event!`;
+
+        if (additionalDetails.length > 0) {
+          invitationMessage += `\nDetails: ${additionalDetails.join(', ')}`;
+        }
+
+        const invitationDiv = document.createElement('div');
+        invitationDiv.classList.add('invitation');
+        invitationDiv.innerHTML = `<p>${invitationMessage}</p><p>RSVP: <span class="highlight">${guest.rsvp}</span></p>`;
+
+        invitationList.appendChild(invitationDiv);
+      });
+    }
+
+    const guests = [
+      { name: 'Shivam', age: 35, rsvp: 'Yes' },
+      { name: 'Preety', age: 28, rsvp: 'No' },
+      { name: 'Aradhina', age: 40, rsvp: 'Maybe' }
+    ];
+
+    const additionalDetails = ['Formal attire required', 'Free drinks for everyone'];
+
+    generateInvitations(guests, ...additionalDetails);
+  </script>
+</body>
+</html>
